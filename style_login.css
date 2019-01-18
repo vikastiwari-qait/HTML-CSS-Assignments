@@ -1,0 +1,19 @@
+.login {
+    text-justify: center;
+    height: auto;
+    background-color: aqua; 
+    width: 50%;
+    border: 4px  gray;
+    padding: 20px;   
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: solid 4px gray;
+    margin-top: 15%;
+}
+label {
+    padding: 20px;
+}
+input,button {
+    margin: 10px;
+}
