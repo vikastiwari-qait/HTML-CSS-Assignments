@@ -1,0 +1,23 @@
+.signup {
+    width: 50%;
+    height: auto;
+    background-color: cornflowerblue;
+    border: solid 4px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+body {
+    background-color: cadetblue;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+label {
+    width:25%;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+}
