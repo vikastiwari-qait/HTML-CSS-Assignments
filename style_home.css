@@ -1,0 +1,56 @@
+header {
+    height: 25%;
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+footer {
+    bottom: 0;
+    position: relative;
+    height: 25%;
+    background-color: aquamarine;
+    padding: 30px;
+    align-content: right;
+}
+
+.home {
+    float: left;
+    display: inline-block;
+}
+
+.logout{
+    float: right;
+    display: inline-block;
+    padding: 2px;
+}
+
+.image_profile {
+    height: 25px;
+    float: right;
+    
+}
+
+section{
+    height: 60%;
+}
+
+.cards{
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+  }
+
+  .cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.container {
+    padding: 2px 16px;
+    width:50%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: cornflowerblue;
+
+}
