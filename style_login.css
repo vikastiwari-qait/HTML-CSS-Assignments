@@ -1,14 +1,14 @@
 .login {
     text-justify: center;
     height: auto;
-    background-color: aqua; 
+    background-color: cornflowerblue; 
     width: 50%;
     border: 4px  gray;
     padding: 20px;   
     text-align: center;
     justify-content: center;
     margin: 0 auto;
-    border: solid 4px gray;
+    border: solid 4px black;
     margin-top: 15%;
 }
 label {
@@ -19,4 +19,7 @@ label {
 }
 input,button {
     margin: 10px;
+}
+body{
+    background-color: cadetblue;
 }
