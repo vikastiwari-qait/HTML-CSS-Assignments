@@ -5,58 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style_signup.css" type = "text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 <body>
-    <div class="signup">
-        <form>
-            <label>Name</label>
-            <input type = "text" name = "user_name" placeholder="enter your name"><br>
-            
-            <label>Address</label>
-            <textarea name="user_address" id="" cols="auto" rows="auto" placeholder="Enter your address"></textarea><br>
-            
-            <label>Password</label>
-            <input type="password" name="user_password" placeholder="enter your password"><br>
-            
-            <label>Confirm Password</label>
-            <input type="password" placeholder="Confirm your password"><br>
-            
-            <label>Gender</label>
-            <select>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Transgender">Transgender</option>
-            </select><br>
-            
-            <label>Date Of Birth</label>
-            <input type="date" name="user_dob"><br>
-            
-            <label>Mobile No.</label>
-            <input type="tel" name="user_mob_no"><br>
-            
-            <label>Languages known</label>
-            <input type="checkbox" name = "English">English &nbsp;
-            <input type="checkbox" name = "Hindi">Hindi &nbsp; <br>
-            
-            <label>Country</label>
-            <select>
-                    <option value="Australia">Australia</option>
-                    <option value="India">India</option>
-                    <option value="Japan">Japan</option>
-                    <option value="USA">USA</option>
-            </select><br>
-            
-            <label>Profile Image</label>
-            <input type="file" name = "user_image" value="user_profile_image">
-            <br>
-            <div class="btn">
-                    <button class="button_signup" formaction="html_home.html">Sign Up</button>
-                    <button class="button_reset">Reset</button>
-            </div>
-            
-        </form>
-       
+    <div class="container">
+        <div class="signup">
+            <form>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" type = "text" name = "user_name" placeholder="enter your name"><br>
+                </div>
+                
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea class="form-control"  name="user_address" id="" cols="auto" rows="auto" placeholder="Enter your address"></textarea> 
+                </div>
+                
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password" name="user_password" placeholder="enter your password">    
+                </div>
+                
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input class="form-control" type="password" placeholder="Confirm your password"><br>
+                </div>
+                
+                <div class="form-group">
+                        <label>Gender</label>
+                        <select class="form-control">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Transgender">Transgender</option>
+                        </select>        
+                </div>
+                
+                <div class="form-group">
+                    <label>Mobile No.</label>
+                    <input class="form-control" type="tel" name="user_mob_no">
+                </div>
+
+                <div class="form-group">
+                    <label>Date Of Birth</label>
+                    <input class="form-control" type="date" name="user_dob">
+                </div>                
+                
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                            <label class="form-check-label">Languages known</label>
+                            <input class="form-check-input" type="checkbox" name = "English">
+                            <label class="form-check-label">English</label> 
+                            <input class="form-check-input" type="checkbox" name = "Hindi">
+                            <label class="form-check-label">Hindi</label>
+                    </div>        
+                </div>
+                
+                <div class="form-group">
+                    <label>Country</label>
+                    <select class="form-control">
+                            <option value="Australia">Australia</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="USA">USA</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Profile Image</label>
+                    <input class = "form-control-file" type="file" name = "user_image" value="user_profile_image">
+                </div>
+                
+                <div class="form-group">
+                      <button class="btn btn-primary" formaction="html_home.html">Sign Up</button>
+                      <button class="btn btn-primary">Reset</button>
+                </div>   
+
+            </form>
+        </div>
     </div>
 </body>
 </html>
