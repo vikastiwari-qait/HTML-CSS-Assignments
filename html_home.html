@@ -4,83 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style_home.css" type="text/css">
+    <!--link rel="stylesheet" href="style_home.css" type="text/css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <title>Home Page</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+    
+    </style>
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <a class="navbar-brand" href="#"><img src="profile_image.jpeg" alt="profile"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
 
-    <header>
-        <label class="home"><a href="#">Home</a></label>
-        <a href="login.html">
-        <img class="image_profile" alt = "profile_image" src="profile_image.jpeg">
-        </a>
-        <label class="logout"><a href="login.html">Logout</a></label>
-    </header>
-
-    <section>
-        <div class="cards">
-            <div class="container">
-                <h4><b>Card1</b></h4>
-                <p>card1 contents</p>
-            </div>
-            <div class="container">
-                    <h4><b>Card2</b></h4>
-                    <p>card2 contents</p>
-            </div>
-            <div class="container">                      
-                    <h4><b>Card3</b></h4>
-                    <p>card3 contents</p>
-            </div>
-            <div class="container">
-                    <h4><b>Card1</b></h4>
-                    <p>card1 contents</p>
+                    <button formaction="login.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
+                  </form>
                 </div>
-                <div class="container">
-                        <h4><b>Card2</b></h4>
-                        <p>card2 contents</p>
-                </div>
-                <div class="container">                      
-                        <h4><b>Card3</b></h4>
-                        <p>card3 contents</p>
-                </div>
-                <div class="container">
-                        <h4><b>Card1</b></h4>
-                        <p>card1 contents</p>
+              </nav>
+              <div class="card">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">Content</div>
+                    <div class="card-footer">Footer</div>
+              </div>
+              <div class="card bg-info">
+                    <div class="card-body text-center">
+                      <p class="card-text">Some text inside the sixth card</p>
                     </div>
-                    <div class="container">
-                            <h4><b>Card2</b></h4>
-                            <p>card2 contents</p>
+            </div>
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Card 1</h4>
+                      <p class="card-text">Some example text.</p>
+                      <a href="#" class="btn btn-primary">card1 link</a>
                     </div>
-                    <div class="container">                      
-                            <h4><b>Card3</b></h4>
-                            <p>card3 contents</p>
-                    </div>
-                    <div class="container">
-                            <h4><b>Card1</b></h4>
-                            <p>card1 contents</p>
+                  </div>
+                  <div class="card" style="width:500px">
+                        <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+                        <div class="card-img-overlay">
+                          <h4 class="card-title">card2</h4>
+                          <p class="card-text">Some example text.</p>
+                          <a href="#" class="btn btn-primary">card2 link</a>
                         </div>
-                        <div class="container">
-                                <h4><b>Card2</b></h4>
-                                <p>card2 contents</p>
-                        </div>
-                        <div class="container">                      
-                                <h4><b>Card3</b></h4>
-                                <p>card3 contents</p>
-                    </div>
-            
-        </div>    
-    </section>
-
-    <footer>
-        <p>
-            Room No<br>
-            City <br>
-            District <br>
-            State <br>
-            Pin Code <br>
-        </address>
-    </p>
+                      </div>
+        <nav class="navbar fixed-bottom navbar-light bg-primary">
+            <a class="navbar-brand" href="#">Fixed bottom</a>
+        </nav>
 
 </body>
 </html>
